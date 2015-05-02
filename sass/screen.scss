@@ -1,0 +1,99 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "breakpoint";
+@import "grids";
+
+
+@include breakpoint(400px) {	
+	section {
+		border: 1px solid green;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(20 of 24);
+	}
+	#bottom {
+		@include span(4 of 24);
+	}
+}
+
+@include breakpoint(800px) {	
+	section {
+		border: 1px solid blue;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(12 of 24);
+	}
+	#bottom {
+		@include span(12 of 24);
+	}
+}
+
+@include breakpoint(1000px) {	
+	section {
+		border: 1px solid red;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(12 of 24);
+	}
+	#bottom {
+		@include span(12 of 24);
+	}
+}
+
+@include breakpoint(1200px) {	
+	section {
+		border: 1px solid fuchsia;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(6 of 24);
+	}
+	#bottom {
+		@include span(18 of 24);
+	}
+}
+
+@include breakpoint(1400px) {	
+	section {
+		border: 1px solid yellow;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(6 of 24);
+	}
+	#bottom {
+		@include span(18 of 24);
+	}
+}
+
+@include breakpoint(1600px) {	
+	section {
+		border: 1px dotted gray;
+	}
+	#top {
+		@include span(12);
+	}
+	#center {
+		@include span(3 of 24);
+	}
+	#bottom {
+		@include span(21 of 24);
+	}
+}
